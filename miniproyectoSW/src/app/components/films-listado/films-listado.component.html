@@ -1,0 +1,22 @@
+<table style="width: 100%; border: 1px solid black;">
+    <thead>
+        <th>title</th>
+        <th>episode_id</th>
+        <th>director</th>
+        <th>producer</th>
+        <th>release_date</th>
+        <th>created</th>
+        <th>edited</th>
+        <th>url</th>
+    </thead>
+    <tr *ngFor="let Film of listadoPeliculas">
+        <td>{{Film.title}}</td>
+        <td>{{Film.episode_id}}</td>
+        <td>{{Film.director}}</td>
+        <td>{{Film.producer}}</td>
+        <td>{{Film.release_date}}</td>
+        <td>{{Film.created | date: 'short'}}</td>
+        <td>{{Film.edited | date: 'short'}}</td>
+        <td>{{Film.url | date: 'short'}}</td>
+    </tr>
+</table> 
